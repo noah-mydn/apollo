@@ -30,7 +30,7 @@ The website is designed to run on screens greater than 900px, making it optimize
 ![Apollo Music Streaming Site](/public/apollo.png)
 
 ### Deployment
-[Demo](https://apollo-noah.netlify.app/category)
+[Demo](https://apollo-noah.netlify.app)
 
 **Note: This application is not responsive and only available for screens greater than 900px.**
 
