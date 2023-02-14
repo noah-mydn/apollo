@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');
+
+
+html,body {
+  box-sizing:border-box;
+  font-family: 'Nanum Gothic', sans-serif;
+  background-color: rgb(5, 18, 36);
+  
+}
+
+body {
+  margin:0 !important;
+  padding:0 !important;
+  height: 100vh;
+}
+
+.main-body {
+  height: 100%;
+  min-height: 100vh;
+  width:100%;
+  background-image: linear-gradient(
+    300deg,
+    hsl(214deg 75% 8%) 0%,
+    hsl(216deg 70% 10%) 18%,
+    hsl(217deg 70% 11%) 26%,
+    hsl(218deg 70% 13%) 33%,
+    hsl(218deg 71% 15%) 39%,
+    hsl(218deg 68% 16%) 44%,
+    hsl(217deg 67% 17%) 50%,
+    hsl(217deg 65% 18%) 56%,
+    hsl(216deg 64% 19%) 61%,
+    hsl(217deg 64% 17%) 67%,
+    hsl(218deg 64% 14%) 74%,
+    hsl(219deg 64% 12%) 82%,
+    hsl(221deg 64% 10%) 100%
+  );
+  display: flex; 
+}
+
+
+.screen-container {
+  margin-left: auto;
+  padding: 0 !important;
+  height: 100%;
+  min-height: 100vh;
+  width: calc(100% - 90px);
+  background-image: linear-gradient(
+  300deg,
+  hsl(214deg 75% 8%) 0%,
+  hsl(216deg 70% 10%) 18%,
+  hsl(217deg 70% 11%) 26%,
+  hsl(218deg 70% 13%) 33%,
+  hsl(218deg 71% 15%) 39%,
+  hsl(218deg 68% 16%) 44%,
+  hsl(217deg 67% 17%) 50%,
+  hsl(217deg 65% 18%) 56%,
+  hsl(216deg 64% 19%) 61%,
+  hsl(217deg 64% 17%) 67%,
+  hsl(218deg 64% 14%) 74%,
+  hsl(219deg 64% 12%) 82%,
+  hsl(221deg 64% 10%) 100%
+);
+  /* background-image: linear-gradient(
+    40deg,
+    hsl(220deg 88% 7%) 0%,
+    hsl(221deg 84% 7%) 7%,
+    hsl(219deg 79% 8%) 14%,
+    hsl(219deg 76% 8%) 21%,
+    hsl(219deg 73% 9%) 29%,
+    hsl(218deg 70% 9%) 36%,
+    hsl(218deg 67% 10%) 43%,
+    hsl(218deg 65% 10%) 50%,
+    hsl(218deg 59% 11%) 57%,
+    hsl(218deg 57% 11%) 64%,
+    hsl(217deg 53% 12%) 71%,
+    hsl(217deg 51% 12%) 79%,
+    hsl(216deg 47% 13%) 86%,
+    hsl(216deg 42% 13%) 93%,
+    hsl(216deg 39% 14%) 100%
+  ); */
+ 
+}
+
+
+
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #4f87be hsl(217deg 65% 18%);
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: hsl(217deg 65% 18%);
+  border-radius: 20px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #4f87be;
+  border-radius: 20px;
+  border: 1px solid #4f87be;
+}

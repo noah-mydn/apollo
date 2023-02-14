@@ -1,0 +1,113 @@
+.login-component {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #030c14;
+}
+
+.login-img {
+    margin: 0 0 7em 0;
+    width: 300px;
+}
+
+.login-btn {
+    padding: 0.7em 2em;
+    font-size: 1em;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #020b13;
+    outline: none;
+    border: none;
+    border-radius: 1em;
+    border: 1px solid white;
+    box-shadow: 0 0 0 0 white;
+    cursor: pointer;
+    transform: translateY(0) scale(1);
+    transition: all 0.3s ease-in-out;
+}
+
+.login-btn:hover, .login-btn:focus {
+    box-shadow: 0 0 2px 2px #ffffff;
+    transform: translateY(-5px) scale(1.1);
+}
+
+.direct-login {
+    text-decoration: none;
+}
+
+.alert {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.library-body {
+    
+    width: 93%;
+    height: auto;
+    padding: 1.5em 2em;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.left-player-body {
+    width: 68%;
+    height: calc(100vh - 1em);
+    margin-top: 1%;
+}
+
+.right-player-body {
+    margin-top: 1em ;
+    margin-left: 1em;
+    width: 28%;
+    height: 96vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+}
+
+.favorite-tracks-container {
+    padding: 1.5em;
+}
+
+.playlist-not-found {
+
+    width: 80%;
+    height:100vh;
+    margin:0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feed-container {
+    width: 100%;
+    height:100%;
+    margin:0 auto;
+    
+}
+
+
+@media screen and (max-width:1000px) {
+
+    .left-player-body {
+        width: 65%;
+    }
+    .right-player-body {
+        width: 30%;
+    }
+}
+
+
+
+

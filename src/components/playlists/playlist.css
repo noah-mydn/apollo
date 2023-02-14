@@ -1,0 +1,82 @@
+.playlist-card {
+    width: 180px;
+    height: 220px;
+    margin: 2em 1.5em;
+    border-radius: 1.2em;
+    padding: 0.5em 0.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    box-shadow: 0 0 4px 1px rgb(10, 24, 39);
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    background-image: linear-gradient(
+        40deg,
+        hsl(216deg 57% 17%) 0%,
+        hsl(217deg 57% 17%) 6%,
+        hsl(217deg 57% 16%) 13%,
+        hsl(217deg 56% 16%) 19%,
+        hsl(217deg 56% 15%) 25%,
+        hsl(217deg 56% 15%) 31%,
+        hsl(217deg 55% 14%) 37%,
+        hsl(217deg 55% 14%) 44%,
+        hsl(217deg 55% 13%) 50%,
+        hsl(217deg 55% 12%) 56%,
+        hsl(217deg 54% 12%) 63%,
+        hsl(217deg 54% 11%) 69%,
+        hsl(217deg 54% 11%) 75%,
+        hsl(217deg 53% 10%) 81%,
+        hsl(217deg 53% 10%) 87%,
+        hsl(218deg 53% 9%) 94%,
+        hsl(218deg 55% 9%) 100%
+      );
+    
+}
+
+.playlist-card:hover {
+    transform: scale(1.08);
+    background-image: linear-gradient(
+        40deg,
+        hsl(217deg 64% 21%) 0%,
+        hsl(217deg 64% 21%) 6%,
+        hsl(217deg 63% 20%) 13%,
+        hsl(217deg 62% 20%) 19%,
+        hsl(217deg 61% 19%) 25%,
+        hsl(217deg 61% 19%) 31%,
+        hsl(217deg 60% 18%) 37%,
+        hsl(218deg 59% 18%) 44%,
+        hsl(218deg 58% 18%) 50%,
+        hsl(218deg 58% 17%) 56%,
+        hsl(218deg 57% 17%) 63%,
+        hsl(218deg 56% 16%) 69%,
+        hsl(218deg 55% 16%) 75%,
+        hsl(219deg 54% 15%) 81%,
+        hsl(219deg 54% 15%) 87%,
+        hsl(219deg 53% 14%) 94%,
+        hsl(219deg 52% 14%) 100%
+      );
+}
+
+.playlist-title {
+    color:white;
+    text-align: center;
+}
+
+.playlist-tracks {
+    color: rgb(178, 179, 192);
+    padding-bottom: 0.5em;
+}
+
+.playlist-img {
+    width: 80%;
+    object-fit: contain;
+    border-radius: 1em;  
+}
+
+
+
+
+

@@ -1,0 +1,8 @@
+.controls-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    margin-top: 1.2em;
+}
+

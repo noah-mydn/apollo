@@ -1,0 +1,42 @@
+.sidebar-container {
+    background-color: #030b1a;
+    width: 90px;
+    height: 100vh;
+    border:1px solid #030b1a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    box-shadow: 0 0 10px 2px #030b1a;
+    z-index: 3;
+}
+
+.profile-img {
+    width: 50px;
+    height: 50px;
+    margin-top: 0.5em;
+    border-radius: 50%;   
+}
+
+.buttonWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+    font-size: 0.8em;
+    color: white;
+    border-radius: 1.2em;
+    padding:0.7em;
+    margin: 0.6em 0;
+    font-weight: 700;
+}
+
+.buttonWrapper:hover {
+    background-color: rgba(0,0,0,0.2);
+}
+
+.active {
+    background-color:  rgba(0,0,0,0.5);
+}
