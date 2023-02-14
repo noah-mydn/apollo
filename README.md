@@ -27,7 +27,13 @@ The website is designed to run on screens greater than 900px, making it optimize
 
 ### Screenshot
 
-![Apollo Music Streaming Site](/public/apollo.png)
+![Apollo-Library](/public/apollo-library.png)
+![Apollo-Favorites](/public/apollo-favorite.png)
+![Apollo-Trending](/public/apollo-trending.png)
+![Apollo-Player](/public/apollo-player.png)
+![Apollo-Feeds](/public/apollo-category.png)
+![Apollo-Categorized-Playlists](/public/apollo-category-playlists.png)
+
 
 ### Deployment
 [Demo](https://apollo-noah.netlify.app/category)

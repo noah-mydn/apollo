@@ -27,7 +27,7 @@ export const Library = () => {
           color:'#fff',
           padding:'1em 0 0 3em',
         }}>Playlists</h1>
-        <Playlists playlists={playlists}/>
+        <Playlists playlists={playlists} loading={loading}/>
 
     </div>
   )

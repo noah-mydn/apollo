@@ -40,7 +40,7 @@ export const Category = () => {
           color:'#fff',
           paddingLeft:'2em',
         }}>{location?.state?.name} Playlists</h1>
-        <Playlists playlists={categoryPlaylists}/>
+        <Playlists playlists={categoryPlaylists} loading={isLoading}/>
     </div>
   )
 }

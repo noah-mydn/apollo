@@ -6,7 +6,7 @@ import {useNavigate} from 'react-router-dom'
 
 import './playlist.css';
 
-export const Playlists = ({playlists}) => {
+export const Playlists = ({playlists,loading}) => {
 
     const [isHover, setIsHover] = React.useState(null);
     const navigate = useNavigate();
@@ -47,23 +47,25 @@ export const Playlists = ({playlists}) => {
 
   return (
     <div className='library-body'>
-        {playlists?.map((playlist)=> (
-            <div className='playlist-card' key={playlist.id}
-            onClick={()=>{playPlaylist(playlist.id)}}
-            onMouseOver={()=> {setIsHover(playlist.id)}}
+
+        {(!loading && playlists) &&
+        playlists?.map((playlist)=> (
+            <div className='playlist-card' key={playlist?.id}
+            onClick={()=>{playPlaylist(playlist?.id)}}
+            onMouseOver={()=> {setIsHover(playlist?.id)}}
             onMouseLeave={()=>{setIsHover(null)}}>
-                <img src={playlist.images[0].url}
+                <img src={playlist?.images[0]?.url}
                 alt={playlist.name}
                 className='playlist-img'/>
                 <h5 className='playlist-title'>
                 {(playlist.name.length) > 20 ? 
-                    `${playlist.name.slice(0,20)} ...` :
+                    `${playlist?.name?.slice(0,20)} ...` :
                     playlist.name
                 } 
                 </h5>
 
                 <small className='playlist-tracks'>
-                   {playlist.tracks.total} tracks
+                   {playlist?.tracks?.total} tracks
                 </small>
                 
                 {isHover === playlist.id && 
