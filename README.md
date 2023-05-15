@@ -25,7 +25,7 @@ Spotify API
 
 The website is designed to run on screens greater than 900px, making it optimized for laptops and tablets. To get the best experience, it is recommended to use Google Chrome as the preferred browser.
 
-***Due to the Spotify API policy, currently, users who are not registered under user management by the developer couldn't access their account via this site. If you would like to test out the app, you need to send your spotify username and email via mayyadnar.netlify.app contact form so that I could register your account to this spotify api integrated website***
+***<span style="color: red;">Due to the Spotify API policy, currently, users who are not registered under user management by the developer couldn't access their account via this site. If you would like to test out the app, you need to send your spotify username and email via mayyadnar.netlify.app contact form so that I could register your account to this spotify api integrated website</span>***
 
 ### Screenshot
 
