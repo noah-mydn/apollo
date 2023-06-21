@@ -7,34 +7,35 @@ import { Library } from './Library'
 import { Player } from './Player'
 import { Trending } from './Trending'
 import { Login } from './auth/Login'
-import { setClientToken } from '../spotify api/spotify'
+import apiClient, { setClientToken } from '../spotify api/spotify'
 import { Category } from './Category'
 
 export const Home = () => {
 
   const [token, setToken] = React.useState('');
 
-  React.useEffect(()=>{
-
-    const token = window.localStorage.getItem("token");
-    const hash= window.location.hash;
-    window.location.hash="";
-    
-    if(!token && hash) {
+  React.useEffect(() => {
+    const token = window.localStorage.getItem('token');
+    const hash = window.location.hash;
+    window.location.hash = '';
+  
+    if (!token && hash) {
       const _token = hash.split('&')[0].split('=')[1];
-      window.localStorage.setItem("token",_token);
-      setToken(_token);
+      window.localStorage.setItem('token', _token);
       setClientToken(_token);
-    }
-
-    else {
-      setToken(token);
+    } else {
       setClientToken(token);
     }
+  
+    apiClient.get('me')
+      .then(response => {
+        console.log(response.data);
+      })
+      .catch((error) => 
+            console.log(error))
+  }, []);
 
-  },[])
-
-  console.log(token)
+  console.log(token);
 
   return (
     !token ? 
