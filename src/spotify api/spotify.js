@@ -3,7 +3,7 @@ import axios from "axios";
 const authEndpoint = "https://accounts.spotify.com/authorize";
 const clientID = "fbd4af310c2e46f49f1a70f2f091c261";
 const clientSecret = "8e1b1679532140988c052592bd8a46ad";
-const redirectUri = "https://apollo-noah.onrender.com";
+const redirectUri = "https://apollo-noah.onrender.com/";
 const scopes = [
   "user-library-read",
   "playlist-read-private",
