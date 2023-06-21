@@ -31,25 +31,6 @@ export const Library = () => {
               <strong>{error?.message}</strong>
             </AlertTitle>
             {error?.response.data}
-            {error?.response.status === 403} &&
-            <br />
-            <small>
-              In order to view the live version, please go to this{" "}
-              <a
-                href="VIEW_YOUTUBE_DEMO"
-                style={{ textDecoration: "none", color: "cyan" }}
-              >
-                link
-              </a>{" "}
-              or you can leave your spotify username and email in the contact
-              form of my{" "}
-              <a
-                href="mayyadanar.netlify.app"
-                style={{ textDecoration: "none", color: "cyan" }}
-              >
-                portfolio
-              </a>
-            </small>
           </Alert>
         </div>
       ) : (
