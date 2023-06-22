@@ -31,6 +31,33 @@ export const Library = () => {
               <strong>{error?.message}</strong>
             </AlertTitle>
             {error?.response.data}
+            {error?.response.status === 403 && (
+              <>
+                <br />
+                <br />
+                <small style={{ fontStyle: "italic" }}>
+                  Please view the demo live video via this{" "}
+                  <a
+                    href="https://www.youtube.com/watch?v=aByezFL7qGA"
+                    target="_blank"
+                    style={{ textDecoration: "none", color: "cyan" }}
+                  >
+                    link
+                  </a>
+                  <br />
+                  or you could enter your Spotify username and email in this{" "}
+                  <a
+                    href="https://mayyadanar.netlify.app/#contact"
+                    target="_blank"
+                    style={{ textDecoration: "none", color: "cyan" }}
+                  >
+                    form
+                  </a>{" "}
+                  to have me registered your account
+                  <br /> in developer dashboard for you to test on your own
+                </small>
+              </>
+            )}
           </Alert>
         </div>
       ) : (
